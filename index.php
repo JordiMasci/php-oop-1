@@ -20,8 +20,14 @@ $movies = [
     $movie_3,
 ];
 
+$genere = [
+    $genere_1,
+    $genere_2,
+    $genere_3,
+];
 
-?>
+
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
