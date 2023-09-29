@@ -20,7 +20,7 @@ class Movie
     // Function per stampare Info Movies (metodo)
     public function InfoMovies()
     {
-        return "Titolo: $this->titolo, Genere: $this->genere, Anno Di Uscita: $this->annoUscita";
+        return "Titolo: $this->titolo -Genere: $this->genere -Anno Di Uscita: $this->annoUscita";
     }
 }
 
