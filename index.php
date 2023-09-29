@@ -2,16 +2,14 @@
 
 require_once __DIR__ . '/models/Movies.php';
 
-// Istanza di 3 oggetti 
-$movie_1 = new Movie('Storia di un Matrimonio', 'Drammatico', 2019);
-$movie_2 = new Movie('Parasite', 'Commedia', 2018);
-$movie_3 = new Movie('Blade Runner 2049', 'Thriller', 2017);
 
-
-
-
-
-?>
+// Array di oggetti
+$movies = [
+    $movie_1,
+    $movie_2,
+    $movie_3,
+]
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,9 +27,15 @@ $movie_3 = new Movie('Blade Runner 2049', 'Thriller', 2017);
     <div class="container">
         <h1>Lista Movies</h1>
         <ul>
-            <li><?php echo ($movie_1->InfoMovies()); ?></li>
-            <li><?php echo ($movie_2->InfoMovies()); ?></li>
-            <li><?php echo ($movie_3->InfoMovies()); ?></li>
+            <li>
+                <?php echo ($movie_1->InfoMovies()); ?>
+            </li>
+            <li>
+                <?php echo ($movie_2->InfoMovies()); ?>
+            </li>
+            <li>
+                <?php echo ($movie_3->InfoMovies()); ?>
+            </li>
         </ul>
     </div>
 </body>
