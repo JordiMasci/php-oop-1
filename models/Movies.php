@@ -23,4 +23,3 @@ class Movie
         return "Titolo: $this->titolo -Genere: {$this->genere->tipo} -Anno Di Uscita: $this->annoUscita";
     }
 }
-

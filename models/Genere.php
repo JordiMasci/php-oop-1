@@ -2,10 +2,10 @@
 
 class Genere
 {
-public $tipo;
+    public $tipo;
 
-public function __construct(string $tipo) {
-    $this->tipo = $tipo;
+    public function __construct(string $tipo)
+    {
+        $this->tipo = $tipo;
+    }
 }
-}
-

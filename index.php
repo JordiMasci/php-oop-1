@@ -26,8 +26,7 @@ $genere = [
     $genere_3,
 ];
 
-
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
