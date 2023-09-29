@@ -24,7 +24,3 @@ class Movie
     }
 }
 
-// Istanza di 3 oggetti 
-$movie_1 = new Movie('Storia di un Matrimonio', 'Drammatico', 2019);
-$movie_2 = new Movie('Parasite', 'Commedia', 2018);
-$movie_3 = new Movie('Blade Runner 2049', 'Thriller', 2017);
