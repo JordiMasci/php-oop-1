@@ -1,11 +1,17 @@
 <?php
 
 require_once __DIR__ . '/models/Movies.php';
+require_once __DIR__ . '/models/Genere.php';
+
+// Istanza generi
+$genere_1 = new Genere('Drammatico');
+$genere_2 = new Genere('Commedia');
+$genere_3 = new Genere('Thriller');
 
 // Istanza di 3 oggetti 
-$movie_1 = new Movie('Storia di un Matrimonio', 'Drammatico', 2019);
-$movie_2 = new Movie('Parasite', 'Commedia', 2018);
-$movie_3 = new Movie('Blade Runner 2049', 'Thriller', 2017);
+$movie_1 = new Movie('Storia di un Matrimonio', $genere_1, 2019);
+$movie_2 = new Movie('Parasite', $genere_2, 2018);
+$movie_3 = new Movie('Blade Runner 2049', $genere_3, 2017);
 
 // Array di oggetti
 $movies = [

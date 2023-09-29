@@ -10,7 +10,7 @@ class Movie
 
     // Apro un costrutto (metodo)
     // serve ad istanziare gli oggetti
-    public function __construct(string $titolo, string $genere, int $annoUscita)
+    public function __construct(string $titolo, Genere $genere, int $annoUscita)
     {
         $this->titolo = $titolo;
         $this->genere = $genere;
@@ -20,7 +20,7 @@ class Movie
     // Function per stampare Info Movies (metodo)
     public function InfoMovies()
     {
-        return "Titolo: $this->titolo -Genere: $this->genere -Anno Di Uscita: $this->annoUscita";
+        return "Titolo: $this->titolo -Genere: {$this->genere->tipo} -Anno Di Uscita: $this->annoUscita";
     }
 }
 

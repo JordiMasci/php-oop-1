@@ -8,3 +8,4 @@ public function __construct(string $tipo) {
     $this->tipo = $tipo;
 }
 }
+
