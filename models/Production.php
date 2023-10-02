@@ -12,4 +12,8 @@ class Production
         $this->genere = $genere;
     }
 
+    public function getInfo()
+    {
+        return "Titolo: $this->titolo - Genere: {$this->genere->tipo}";
+    }
 }

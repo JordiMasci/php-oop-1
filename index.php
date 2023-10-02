@@ -39,6 +39,7 @@ $genere = [
 ];
 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -77,6 +78,10 @@ $genere = [
             </li>
             <li>
                 <?php echo ($serie_3->InfoTvSeries()); ?>
+            </li>
+            <li>
+
+                <?php echo ($movie_1->getInfo()); ?>
             </li>
         </ul>
     </div>

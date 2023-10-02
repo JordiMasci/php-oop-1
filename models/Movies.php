@@ -24,4 +24,10 @@ class Movie extends Production
         return "Titolo: $this->titolo -Genere: {$this->genere->tipo} -Anno Di Uscita: $this->annoUscita -Durata: $this->durata";
     }
 
+    public function getInfo()
+    {
+        return parent::getInfo() . "-Anno Di Uscita: $this->annoUscita -Durata: $this->durata";
+    }
+
 }
+
