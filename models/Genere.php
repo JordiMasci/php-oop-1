@@ -1,6 +1,6 @@
 <?php
 
-class Genere
+class Genere 
 {
     public $tipo;
 

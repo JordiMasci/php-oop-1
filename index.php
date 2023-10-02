@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/models/Production.php';
 require_once __DIR__ . '/models/Movies.php';
 require_once __DIR__ . '/models/Genere.php';
 
