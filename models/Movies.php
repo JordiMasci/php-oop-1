@@ -21,7 +21,7 @@ class Movie extends Production
     // Function per stampare Info Movies (metodo)
     public function InfoMovies()
     {
-        return "Titolo: $this->titolo -Genere: {$this->genere->tipo} -Anno Di Uscita: $this->annoUscita";
+        return "Titolo: $this->titolo -Genere: {$this->genere->tipo} -Anno Di Uscita: $this->annoUscita -Durata: $this->durata";
     }
 
 }

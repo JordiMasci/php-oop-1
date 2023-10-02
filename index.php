@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/models/Production.php';
 require_once __DIR__ . '/models/Movies.php';
+require_once __DIR__ . '/models/TvSerie.php';
 require_once __DIR__ . '/models/Genere.php';
 
 // Istanza generi
@@ -14,11 +15,21 @@ $movie_1 = new Movie('Storia di un Matrimonio', $genere_1, 2019, 175);
 $movie_2 = new Movie('Parasite', $genere_2, 2018, 200.5);
 $movie_3 = new Movie('Blade Runner 2049', $genere_3, 2017, 250.5);
 
+$serie_1 = new TvSerie('Titolo 1', $genere_1, 100, 20, 5);
+$serie_2 = new TvSerie('Titolo 2', $genere_2, 150, 25, 10);
+$serie_3 = new TvSerie('Titolo 3', $genere_3, 200, 30, 15);
+
 // Array di oggetti
 $movies = [
     $movie_1,
     $movie_2,
     $movie_3,
+];
+
+$series = [
+    $serie_1,
+    $serie_2,
+    $serie_3,
 ];
 
 $genere = [
@@ -28,7 +39,7 @@ $genere = [
 ];
 
 
-
+var_dump($series);
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +55,7 @@ $genere = [
 </head>
 
 <body>
-    <!-- <div class="container">
+    <div class="container">
         <h1>Lista Movies</h1>
         <ul>
             <li>
@@ -57,7 +68,7 @@ $genere = [
                 <?php echo ($movie_3->InfoMovies()); ?>
             </li>
         </ul>
-    </div> -->
+    </div>
 </body>
 
 </html>
