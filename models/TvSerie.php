@@ -16,6 +16,6 @@ class TvSerie extends Production
 
     public function InfoTvSeries()
     {
-        return "Titolo: $this->titolo -Genere: $this->genere - Anno Inizio Serie: $this->annoInizio - Numero Episodi: $this->numeroEpisodi - Numero Stagioni: $this->numeroStagioni";
+        return "Titolo: $this->titolo -Genere: {$this->genere->tipo} - Anno Inizio Serie: $this->annoInizio - Numero Episodi: $this->numeroEpisodi - Numero Stagioni: $this->numeroStagioni";
     }
 }

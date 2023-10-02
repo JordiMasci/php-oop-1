@@ -39,7 +39,6 @@ $genere = [
 ];
 
 
-var_dump($series);
 ?>
 
 <!DOCTYPE html>
@@ -66,6 +65,18 @@ var_dump($series);
             </li>
             <li>
                 <?php echo ($movie_3->InfoMovies()); ?>
+            </li>
+        </ul>
+        <h1>Lista Tv Series</h1>
+        <ul>
+            <li>
+                <?php echo ($serie_1->InfoTvSeries()); ?>
+            </li>
+            <li>
+                <?php echo ($serie_2->InfoTvSeries()); ?>
+            </li>
+            <li>
+                <?php echo ($serie_3->InfoTvSeries()); ?>
             </li>
         </ul>
     </div>
