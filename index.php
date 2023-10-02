@@ -44,7 +44,7 @@ $genere = [
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <h1>Lista Movies</h1>
         <ul>
             <li>
@@ -57,7 +57,7 @@ $genere = [
                 <?php echo ($movie_3->InfoMovies()); ?>
             </li>
         </ul>
-    </div>
+    </div> -->
 </body>
 
 </html>
