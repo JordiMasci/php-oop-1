@@ -9,23 +9,13 @@ class Movie extends Production
 
     // Apro un costrutto (metodo)
     // serve ad istanziare gli oggetti
-    // public function __construct(string $titolo, Genere $genere, int $annoUscita)
-    // {
-    //     $this->titolo = $titolo;
-    //     $this->genere = $genere;
-    //     $this->annoUscita = $annoUscita;
-    // }
+
     public function __construct(string $titolo, Genere $genere, int $annoUscita, float $durata)
     {
         parent::__construct($titolo, $genere);
         $this->annoUscita = $annoUscita;
         $this->durata = $durata;
     }
-
-
-
-
-
 
 
     // Function per stampare Info Movies (metodo)
