@@ -38,6 +38,15 @@ $genere = [
     $genere_3,
 ];
 
+$arrayMisto = [
+    $serie_1,
+    $movie_1,
+    $serie_2,
+    $movie_2,
+    $serie_3,
+    $movie_3,
+]
+
 
 
 ?>
@@ -70,6 +79,18 @@ $genere = [
             <?php foreach ($series as $serie): ?>
                 <li>
                     <?php echo $serie->getInfo(); ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+
+        <!-- prova array misto -->
+        <h1>Lista Mista Serie Tv e Film</h1>
+        <ul>
+            <?php foreach ($arrayMisto as $element): ?>
+                <li>
+                    <?php
+                        echo $element->getInfo();
+                    ?>
                 </li>
             <?php endforeach; ?>
         </ul>
