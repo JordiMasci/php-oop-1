@@ -6,7 +6,7 @@ class Production
     public $titolo;
     public $genere;
 
-    public function __construct(string $titolo, Genere $genere)
+    public function __construct(string $titolo, array $genere)
     {
         $this->titolo = $titolo;
         $this->genere = $genere;
@@ -14,11 +14,20 @@ class Production
 
     public function getInfo()
     {
-        return "Genere: {$this->genere->tipo}";
+        // Utilizza implode per unire i tipi di genere in una stringa separata da virgole
+        $tipiGeneri = implode(', ', $this->getAllGenere());
+
+        return "Genere: $tipiGeneri";
     }
 
     public function getAllGenere()
     {
+        $tipiGeneri = [];
 
+        foreach ($this->genere as $genere) {
+            $tipiGeneri[] = $genere->tipo;
+        }
+
+        return $tipiGeneri;
     }
 }

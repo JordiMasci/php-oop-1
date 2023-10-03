@@ -11,13 +11,13 @@ $genere_2 = new Genere('Commedia');
 $genere_3 = new Genere('Thriller');
 
 // Istanza di 3 oggetti 
-$movie_1 = new Movie('Storia di un Matrimonio', $genere_1, 2019, 175);
-$movie_2 = new Movie('Parasite', $genere_2, 2018, 200.5);
-$movie_3 = new Movie('Blade Runner 2049', $genere_3, 2017, 250.5);
+$movie_1 = new Movie('Storia di un Matrimonio', [$genere_1], 2019, 175);
+$movie_2 = new Movie('Parasite', [$genere_2], 2018, 200.5);
+$movie_3 = new Movie('Blade Runner 2049', [$genere_3], 2017, 250.5);
 
-$serie_1 = new TvSerie('Titolo 1', $genere_1, 100, 20, 5);
-$serie_2 = new TvSerie('Titolo 2', $genere_2, 150, 25, 10);
-$serie_3 = new TvSerie('Titolo 3', $genere_3, 200, 30, 15);
+$serie_1 = new TvSerie('Titolo 1', [$genere_1], 100, 20, 5);
+$serie_2 = new TvSerie('Titolo 2', [$genere_2], 150, 25, 10);
+$serie_3 = new TvSerie('Titolo 3', [$genere_3], 200, 30, 15);
 
 // Array di oggetti
 $movies = [

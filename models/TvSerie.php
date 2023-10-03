@@ -6,7 +6,7 @@ class TvSerie extends Production
     public $numeroEpisodi;
     public $numeroStagioni;
 
-    public function __construct(string $titolo, Genere $genere, int $annoInizio, int $numeroEpisodi, int $numeroStagioni)
+    public function __construct(string $titolo, array $genere, int $annoInizio, int $numeroEpisodi, int $numeroStagioni)
     {
         parent::__construct($titolo, $genere);
         $this->annoInizio = $annoInizio;
