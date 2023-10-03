@@ -60,7 +60,7 @@ $genere = [
         <ul>
             <?php foreach ($movies as $movie): ?>
                 <li>
-                    <?php echo $movie->InfoMovies(); ?>
+                    <?php echo $movie->getInfo(); ?>
                 </li>
             <?php endforeach; ?>
         </ul>
@@ -69,7 +69,7 @@ $genere = [
         <ul>
             <?php foreach ($series as $serie): ?>
                 <li>
-                    <?php echo $serie->InfoTvSeries(); ?>
+                    <?php echo $serie->getInfo(); ?>
                 </li>
             <?php endforeach; ?>
         </ul>
