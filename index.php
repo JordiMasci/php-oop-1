@@ -49,7 +49,7 @@ $arrayMisto = [
 
 
 
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,34 +66,63 @@ $arrayMisto = [
 <body>
     <div class="container">
         <h1>Lista Film</h1>
-        <ul>
+        <div class="row">
             <?php foreach ($movies as $movie): ?>
-                <li>
-                    <?php echo $movie->getInfo(); ?>
-                </li>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo $movie->titolo; ?>
+                            </h5>
+                            <p class="card-text">
+                                <?php echo $movie->getInfo(); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
+
+        <hr class="p-5">
 
         <h1>Lista Serie TV</h1>
-        <ul>
+        <div class="row">
             <?php foreach ($series as $serie): ?>
-                <li>
-                    <?php echo $serie->getInfo(); ?>
-                </li>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo $serie->titolo; ?>
+                            </h5>
+                            <p class="card-text">
+                                <?php echo $serie->getInfo(); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
+
+        <hr class="p-5">
 
         <!-- prova array misto -->
         <h1>Lista Mista Serie Tv e Film</h1>
-        <ul>
+        <div class="row">
             <?php foreach ($arrayMisto as $element): ?>
-                <li>
-                    <?php
-                        echo $element->getInfo();
-                    ?>
-                </li>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo $element->titolo; ?>
+                            </h5>
+                            <p class="card-text">
+                                <?php echo $element->getInfo(); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
     </div>
 </body>
 

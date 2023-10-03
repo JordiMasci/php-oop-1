@@ -16,4 +16,9 @@ class Production
     {
         return "Titolo: $this->titolo - Genere: {$this->genere->tipo}";
     }
+
+    public function getAllGenere()
+    {
+
+    }
 }
