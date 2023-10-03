@@ -14,7 +14,7 @@ class Production
 
     public function getInfo()
     {
-        return "Titolo: $this->titolo - Genere: {$this->genere->tipo}";
+        return "Genere: {$this->genere->tipo}";
     }
 
     public function getAllGenere()
