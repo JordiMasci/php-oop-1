@@ -56,33 +56,22 @@ $genere = [
 
 <body>
     <div class="container">
-        <h1>Lista Movies</h1>
+        <h1>Lista Film</h1>
         <ul>
-            <li>
-                <?php echo ($movie_1->InfoMovies()); ?>
-            </li>
-            <li>
-                <?php echo ($movie_2->InfoMovies()); ?>
-            </li>
-            <li>
-                <?php echo ($movie_3->InfoMovies()); ?>
-            </li>
+            <?php foreach ($movies as $movie): ?>
+                <li>
+                    <?php echo $movie->InfoMovies(); ?>
+                </li>
+            <?php endforeach; ?>
         </ul>
-        <h1>Lista Tv Series</h1>
-        <ul>
-            <li>
-                <?php echo ($serie_1->InfoTvSeries()); ?>
-            </li>
-            <li>
-                <?php echo ($serie_2->InfoTvSeries()); ?>
-            </li>
-            <li>
-                <?php echo ($serie_3->InfoTvSeries()); ?>
-            </li>
-            <li>
 
-                <?php echo ($movie_1->getInfo()); ?>
-            </li>
+        <h1>Lista Serie TV</h1>
+        <ul>
+            <?php foreach ($series as $serie): ?>
+                <li>
+                    <?php echo $serie->InfoTvSeries(); ?>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
 </body>
